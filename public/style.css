@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+.site-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+.head{
+    background-image: linear-gradient(to bottom, rgb(170, 223, 255), rgb(255, 255, 255));
+    width: 100vw;
+    height: 10vh;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.weather{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.weather img {
+    height: 2.5rem;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.options img{
+    height: 1.7rem;
+}
+.searchdiv{
+    box-shadow:  0 4px 10px -px rgb(0, 0, 0) ;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgb(253, 170, 87));
+    display: flex;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchsys{
+    width: 70vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.searchsys input{
+    height: 2rem;
+    width: 20rem;
+    border: none;
+    background:transparent;
+    padding: 2px;
+    border-radius: 3px;
+}
+.searchsys input:hover{
+    background-color: #ffffff;
+    border: none;
+}
+.searchsys img{
+    height: 2rem;
+    width: 2rem;
+}
+#searchbt{
+    height: 2rem;
+    width: 4rem;
+    background:transparent;
+    border: none;
+    font-weight: 550;
+    font-size: 15px;
+}
+#searchbt:hover{
+   background-color: #ffffff;
+}
+
+
+.main{
+    display: none;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    background-image: linear-gradient(to bottom, #ffffff, #1cb3fed6)
+}
+.current{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 70%;
+    padding: 1rem;
+
+}
+.basic-left{
+    flex:1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    justify-self: flex-start;
+    gap: 0.3rem;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.basic-right{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#brimg{
+    width: 50%;
+}
+.ctemp{
+    display: flex;
+    flex-direction: row;
+}
+.minmax{
+    display: flex;
+    flex-direction: row;
+}
+.temp{
+    display: flex;
+    flex-direction: row;
+}
+.temp h1{
+    font-size: 5rem;
+}
+.temp h2{
+    font-size: 2.5rem;
+}
+.temp{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+.feels-like{
+    display: flex;
+    flex-direction: row;
+}
+.current-other{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #5f5f5f;
+}
+.cloud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cloudh{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.wimg{
+    width: 15%;
+}
+#cod{
+    font-size:large;
+}
+#crd{
+    font-size:large;
+}
+.todays-other{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #ffffff;
+}
+.current-other{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.cr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.aqi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    background-color: #007db759;
+    border-radius: 5px;
+}
+.hwvdup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2rem);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.ot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #007db759;
+    border-radius: 5px;
+}
+.weekly{
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 2rem); */
+    color: #ffffff;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    background-color: #007db759;
+    border-radius: 5px;
+}
+.weekday{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+#raindrop{
+    width: 3%;
+}
+.rise{
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 3rem;
+}
+.riseh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.riseimg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    color: gray;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #ffffff;
+}
+.update{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0.2rem;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+}
+#updateimg1{
+    width: 1.4rem;
+}
+#updateimg2{
+    width: 1.2rem;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}

@@ -9,7 +9,7 @@ app.get("/weather/:city", async (req, res) => {
         const city = req.params.city;
 
         const response = await fetch(
-            `https://api.weatherapi.com/v1/forecast.json?key=bf3df55bd7eb48d6a58172104260606&q=${city}&days=7&aqi=yes&alerts=yes`
+            `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=7&aqi=yes&alerts=yes`
         );
 
         const data = await response.json();

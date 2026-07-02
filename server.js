@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
+const API_KEY = process.env.WEATHER_API_KEY;
+
+
 
 app.use(express.json());
-app.use(express.static("public")); // to serve frontend files
+app.use(express.static("public"));
 
 app.get("/weather/:city", async (req, res) => {
     try {
